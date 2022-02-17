@@ -1,0 +1,14 @@
+#new_task_input {
+    width: 500px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+}
+
+.input-field button {
+    margin-left: 10px;
+    height: 45px;
+}

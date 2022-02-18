@@ -1,7 +1,7 @@
 import React from "react";
 import {Route, Switch} from "react-router-dom";
 import {MainPage} from "./pages/MainPage";
-import {ToDoPage} from "./pages/ToDoPage";
+import {ToDoPage} from "./pages/todoPage/ToDoPage";
 
 export const Routes = () => {
     return (

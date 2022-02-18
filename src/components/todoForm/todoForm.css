@@ -11,4 +11,11 @@
 .input-field button {
     margin-left: 10px;
     height: 45px;
+    width: 105px;
+
+    border-radius: 5px;
+}
+
+.row {
+    margin-bottom: 0;
 }

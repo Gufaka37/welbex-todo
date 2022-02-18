@@ -10,7 +10,8 @@ import {Provider} from "react-redux";
 
 const store = createStore(rootReducer, compose(
     applyMiddleware(thunk),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    // Redux devtools for Chrome.
+    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 ));
 
 const app = (

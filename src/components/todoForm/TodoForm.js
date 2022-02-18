@@ -1,12 +1,21 @@
 import React, {useState} from "react";
 import './todoForm.css';
+import {useDispatch} from "react-redux";
+import {createTask} from "../../redux/actions";
 
 export const TodoForm = () => {
     const [title, setTitle] = useState('');
+    const dispatch = useDispatch();
 
     const submitHandler = event => {
         event.preventDefault();
 
+        const newTask = {
+            title, id: Date.now().toString()
+        }
+
+        dispatch(createTask(newTask));
+        setTitle('');
     }
 
     const changeHandler = event => {

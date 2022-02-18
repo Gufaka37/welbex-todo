@@ -1,6 +1,7 @@
 import React from "react";
 import {TodoForm} from "../components/todoForm/TodoForm";
 import './todoPage.css';
+import {Tasks} from "../components/Tasks";
 
 export const ToDoPage = () => {
     return (
@@ -10,7 +11,7 @@ export const ToDoPage = () => {
                 <TodoForm />
               </div>
               <div className="todos">
-
+                    <Tasks />
               </div>
           </div>
           <div className="completed-todos">
